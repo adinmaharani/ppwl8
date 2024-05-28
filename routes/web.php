@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\PermissionController;
 /*
 |-------------------------------------------------------------------------
 -
@@ -31,6 +32,6 @@ Route::middleware('auth')->group(function () {
         'roles' => RoleController::class,
         'users' => UserController::class,
         'mahasiswas' => MahasiswaController::class,
-// 'permissions' => PermissionController::class,
+        'permissions' => PermissionController::class,
     ]);
 });
